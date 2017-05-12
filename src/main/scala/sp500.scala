@@ -117,7 +117,7 @@ var valuesRDD = sc.emptyRDD[Double]
 				matched (ctr)(5) = densitiesArray(valuesArray.indexWhere(_ == -j)) //density of neg value
 
 				diff = matched(ctr)(5) - matched(ctr)(2)
-				println(ctr, matched(ctr)(0),matched(ctr)(1),matched(ctr)(2),matched(ctr)(3),matched(ctr)(4),matched(ctr)(5) , "DIFF:",diff)
+				//println(ctr, matched(ctr)(0),matched(ctr)(1),matched(ctr)(2),matched(ctr)(3),matched(ctr)(4),matched(ctr)(5) , "DIFF:",diff)
 				ctr+=1
 
 				if (0.85 < diff && diff < 0.95) retlist = j :: retlist
